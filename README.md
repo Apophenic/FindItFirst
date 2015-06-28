@@ -10,13 +10,13 @@ time before they're listed on the actual site. This means you, quite literally, 
 
 ### How To Use It
 In order to begin using this application you need to do three things:
-1) Get an eBay Developer Key. This can be acquired, for free,
+* Get an eBay Developer Key. This can be acquired, for free,
 [from eBay's dev site](https://go.developer.ebay.com/what-ebay-api).
 You will then set ``finditfirst.ebay.API.EBAY_DEV_KEY_STRING`` to your developer key's AppID.
-2) You need to set the email and password for the email account
+* You need to set the email and password for the email account
 you'll be using to _send_ email notifications.
 See ``finditfirst.utilities.MailService``
-3) Set the email to _receieve_ email notifications. This is done
+* Set the email to _receieve_ email notifications. This is done
 using the Graphical User Interface, under settings.
 __Note__: You can probably use the same address to send and receive
 emails.
