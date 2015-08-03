@@ -48,3 +48,9 @@ dev_keys.txt
 eBay_Response_format.txt
 TODO.txt
 bin/lib/javax.mail.jar
+
+FindItFirst.iml
+bin
+.idea
+META-INF
+settings.ini

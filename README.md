@@ -20,12 +20,3 @@ See ``finditfirst.utilities.MailService``
 using the Graphical User Interface, under settings.
 __Note__: You can probably use the same address to send and receive
 emails.
-
-##### Logic
-A custom ``JSplitPane`` is used, with a custom ``JTable`` (``SearchTable``) storing
-(SearchEntry) objects, the equivalent of an ebay search, on the left
-component of the pane. Anytime a ``SearchEntry`` is selected in the table,
-an (``OptionPanel``) is loaded on the right component which contains
-a number of optional filters for refining the selected search.
-``SearchEntry`` contains the logic on how a search should be handled,
-when it should run, and how often it should run.
