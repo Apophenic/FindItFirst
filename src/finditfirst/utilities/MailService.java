@@ -1,9 +1,7 @@
 package finditfirst.utilities;
 
 import finditfirst.ebay.Listing;
-import finditfirst.main.GUI;
-import finditfirst.main.Program;
-import finditfirst.main.Settings;
+import finditfirst.main.*;
 import finditfirst.searchentry.SearchEntry;
 
 import javax.mail.*;
@@ -31,10 +29,10 @@ public final class MailService
 	private static final Logger LOG = Program.LOG;
 	
 	/** This email address will be used to SEND notifications */
-	public static final String FINDITFIRST_EMAIL 		= "";
+	public static final String FINDITFIRST_EMAIL 		= APISettings.getInstance().getFinditfirstEmail();
 	
 	/** Password for above email address */
-	public static final String EMAIL_PASSWORD 			= "";
+	public static final String EMAIL_PASSWORD 			= APISettings.getInstance().getEmailPassword();
 	
 	/** Used to construct HTML formatted email messages */
 	public static final String EMAIL_HTML_HEADER 		= "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"

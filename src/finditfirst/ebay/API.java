@@ -1,6 +1,7 @@
 package finditfirst.ebay;
 
 import finditfirst.gui.panels.OptionPanel;
+import finditfirst.main.APISettings;
 import finditfirst.main.Program;
 import finditfirst.searchentry.SearchEntry;
 import finditfirst.utilities.MailService;
@@ -25,12 +26,12 @@ import java.util.regex.Pattern;
 public final class API	//TODO XML parsing / JSON
 {
 	private static final Logger LOG = Program.LOG;
-	
+
 	/** eBay Developer key, gotten from eBay.
 	 * Be sure to use the "Production Key,"
 	 * and not the "Sandbox Key." You need the AppID.
 	 */
-	public static final String EBAY_DEV_KEY_STRING		= "";
+	private static final String EBAY_DEV_KEY_STRING		= APISettings.getInstance().getEbayDevKey();
 	
 	/** GET requests utilizing eBay's "findItemsAdvanced"
 	 * are required to have at least parameters.

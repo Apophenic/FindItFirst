@@ -54,3 +54,4 @@ bin
 .idea
 META-INF
 settings.ini
+jar/FindItFirst/searches.lst

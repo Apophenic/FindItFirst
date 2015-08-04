@@ -1,22 +1,25 @@
 # FindItFirst
 -------------
+![Sample Img](https://github.com/Apophenic/FindItFirst/blob/master/res/sample.jpg)
+_FindItFirst_ is a client-side application that is built on top of eBay's RESTful API for automating eBay searches.
 
 ### What It Does
-FindItFirst is a client-side application that is built on top of eBay's RESTful API utilizing the "findItemsAdvanced"
-function. It automates eBay searches and sends email notifications anytime a new item result is discovered. In
-addition, you can choose how often a search can run and even when to start and stop the search. The benefits speak
-for themselves, but it's also worth noting that new items ALWAYS appear through eBay's API a significant amount of
+----------------
+_FindItFirst_ offers the ability to create highly customizable automated eBay searches.
+After creating a search and scheduling when it should run and how frequently, _FindItFirst_ will send you email
+notifications anytime a new item result is discovered.
+
+If you're an eBay power user and need to see new listings immediately as they appear on the site, _FindItFirst_ will
+be a great asset. New items are _always_ accessible through eBay's API a significant amount of
 time before they're listed on the actual site. This means you, quite literally, will "_FindItFirst_" :smile:
 
 ### How To Use It
+-----------------
 In order to begin using this application you need to do three things:
-* Get an eBay Developer Key. This can be acquired, for free,
+1) Get an eBay Developer Key. This can be acquired, for free,
 [from eBay's dev site](https://go.developer.ebay.com/what-ebay-api).
-You will then set ``finditfirst.ebay.API.EBAY_DEV_KEY_STRING`` to your developer key's AppID.
-* You need to set the email and password for the email account
-you'll be using to _send_ email notifications.
-See ``finditfirst.utilities.MailService``
-* Set the email to _receieve_ email notifications. This is done
-using the Graphical User Interface, under settings.
-__Note__: You can probably use the same address to send and receive
-emails.
+2) Edit the _api-settings.txt_ file to include:
+    * Your eBay Developer key
+    * The email address that will send notifications
+    * The email address' password
+3) Using the settings dialog in the _FindItFirst_'s UI, add the email you'd like to use for receiving notifications.
